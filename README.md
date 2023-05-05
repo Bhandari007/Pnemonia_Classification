@@ -40,4 +40,9 @@ Some visualizations of the notebook
 
 ![image](https://user-images.githubusercontent.com/59955680/236381527-978fcd06-9891-4f70-b6b7-91a0e16eb7d8.png)
 
+* Example Predictions
+
+![image](https://user-images.githubusercontent.com/59955680/236393797-a8f1d985-de35-4d64-8c63-0ea850bd921a.png)
+
+
 
