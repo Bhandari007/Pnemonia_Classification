@@ -44,5 +44,8 @@ Some visualizations of the notebook
 
 ![image](https://user-images.githubusercontent.com/59955680/236393797-a8f1d985-de35-4d64-8c63-0ea850bd921a.png)
 
+Class Activation Map
+---
+
 
 
