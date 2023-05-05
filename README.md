@@ -2,7 +2,10 @@ About the repository
 ---
 The repository consist of notebook, related files and reports.
 
-
+Result of the experiments:
+----
+Please visit the following link to visualize different experiments:<br>
+https://tensorboard.dev/experiment/vV1eCnyLRz2z8FzOQJCPiA/
 
 
 Pnemonia_Classification
