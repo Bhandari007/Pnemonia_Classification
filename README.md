@@ -25,27 +25,34 @@ Libraries and other tools
 * numpy
 * tensorflow & tensorboard
 * scikit-learn
+* cv2
 
 Some visualizations of the notebook
 ---
-* Images Example
+* `Images Example`
 
 ![image](https://user-images.githubusercontent.com/59955680/236381297-2e6de421-4d2b-4509-ad08-715834551ad1.png)
 
-* Loss Curves
+* `Loss Curves`
 
 ![image](https://user-images.githubusercontent.com/59955680/236381444-397fcebc-6809-470e-8223-96851652b6ce.png)
 
-* Evaluation Metrics
+* `Evaluation Metrics`
 
 ![image](https://user-images.githubusercontent.com/59955680/236381527-978fcd06-9891-4f70-b6b7-91a0e16eb7d8.png)
 
-* Example Predictions
+* `Example Predictions`
 
 ![image](https://user-images.githubusercontent.com/59955680/236393797-a8f1d985-de35-4d64-8c63-0ea850bd921a.png)
 
-Class Activation Map
+`Class Activation Map`
 ---
+
+`References`
+---
+* https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0256630
+* https://www.tensorflow.org/api_docs
+* https://pyimagesearch.com/2020/03/09/grad-cam-visualize-class-activation-maps-with-keras-tensorflow-and-deep-learning
 
 
 
