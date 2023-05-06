@@ -307,7 +307,7 @@ def plot_roc_curves(true_label, predictions):
     plt.legend()
     plt.show()
 
-def evaluate_model(true_labels, predictions, class_names):
+def evaluate_model(true_labels, predictions, class_names, threshold=0.5):
     """
     Makes a confusion matrix for the model
     
@@ -317,7 +317,7 @@ def evaluate_model(true_labels, predictions, class_names):
       class_names: the class_names in the form of list
     """  
   
-    predicted_labels = [0 if prediction < 0.5 else 1 for prediction in predictions]
+    predicted_labels = [0 if prediction < threshold else 1 for prediction in predictions]
     make_confusion_matrix(true_labels, predicted_labels, classes = class_names)
     cm = confusion_matrix(true_labels,predicted_labels)
 
