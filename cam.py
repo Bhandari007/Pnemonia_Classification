@@ -1,6 +1,7 @@
 import tensorflow as tf
 import numpy as np
 import cv2
+from tensorflow.keras.models import Model
 
 class GradCAM:
   def __init__(self, model, classIdx, layerName=None):
