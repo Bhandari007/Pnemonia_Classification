@@ -2,6 +2,7 @@
 ### Storing them here so they're easily accessible.
 
 import tensorflow as tf
+from sklearn.metrics import roc_curve, classification_report
 
 # Create a function to import an image and resize it to be able to be used with our model
 def load_and_prep_image(filename, img_shape=224, scale=True):
@@ -296,7 +297,7 @@ def plot_roc_curves(true_label, predictions):
       true_label: true label in the form of 1D
       predictions: predicted labels in the form of 1D
     """
-    fpr, tpr, thresholds = roc_curve(true_labels, predictions)
+    fpr, tpr, thresholds = roc_curve(true_label, predictions)
 
     sensitivity = tpr
     specificity = 1 - fpr
@@ -309,17 +310,18 @@ def plot_roc_curves(true_label, predictions):
     plt.legend()
     plt.show()
 
-def evaluate_model(true_labels, predictions):
+def evaluate_model(true_labels, predictions, class_names):
     """
     Makes a confusion matrix for the model
     
     Args:
       true_labels: true label in the form of 1D
       predictions: predicted labels in the form of 1D
+      class_names: the class_names in the form of list
     """  
   
     predicted_labels = [0 if prediction < 0.5 else 1 for prediction in predictions]
-    make_confusion_matrix(true_labels, predicted_labels, classes = test_data.class_names)
+    make_confusion_matrix(true_labels, predicted_labels, classes = class_names)
     cm = confusion_matrix(true_labels,predicted_labels)
 
     print(classification_report(true_labels, predicted_labels))
