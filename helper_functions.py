@@ -309,17 +309,17 @@ def plot_roc_curves(true_label, predictions):
     plt.legend()
     plt.show()
 
-def evaluate_model(model, predictions):
+def evaluate_model(true_labels, predictions):
     """
     Makes a confusion matrix for the model
     
     Args:
-      model: trained model
+      true_labels: true label in the form of 1D
       predictions: predicted labels in the form of 1D
     """  
   
-  predicted_labels = [0 if prediction < 0.5 else 1 for prediction in predictions]
-  make_confusion_matrix(true_labels, predicted_labels, classes = test_data.class_names)
-  cm = confusion_matrix(true_labels,predicted_labels)
+    predicted_labels = [0 if prediction < 0.5 else 1 for prediction in predictions]
+    make_confusion_matrix(true_labels, predicted_labels, classes = test_data.class_names)
+    cm = confusion_matrix(true_labels,predicted_labels)
 
-  print(classification_report(true_labels, predicted_labels))
+    print(classification_report(true_labels, predicted_labels))
