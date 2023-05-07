@@ -46,6 +46,8 @@ Some visualizations of the notebook
 
 `Class Activation Map`
 ---
+![image](https://user-images.githubusercontent.com/59955680/236654234-5f34fc3b-a269-48f5-8c18-32fc5008fcc8.png)
+
 
 `References`
 ---
